@@ -1,0 +1,942 @@
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video { display:block;}
+mark, rp, rt, ruby, summary, time { display: inline}
+html {
+	margin: 0; 
+	padding: 0;
+}
+body {
+	font: 13px/19px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #8e8e8e;
+	position: relative;
+	min-width: 810px;
+	width: 100%;
+	background: #fbfbfb;
+	/*overflow: hidden;*/
+}
+.bg{
+	background: url(../images/bg-tail.gif) 0 0 repeat;
+}
+.bg1{
+	background: url(../images/bg1-tail.jpg) center top repeat-x;
+}
+.shadow{
+	background: url(../images/shadow.jpg) center top no-repeat;
+}
+a {
+	text-decoration: none;
+	outline: none; 
+	cursor: pointer;
+}
+p {
+	margin: 0;
+}
+h1 {
+	float: left;
+}
+h1>span {
+	position: relative;
+	display: inline-block; 
+	background: url("../images/logo2.png") no-repeat; 
+	text-indent: 100%; 
+	white-space: nowrap; 
+	overflow: hidden; 
+	width: 362px; 
+	height: 109px; 
+	margin: 32px 0 0;
+	z-index: 1;
+	top: -20px;
+}
+h2 {
+	font: 22px/26px 'Times New Roman', Georgia, Serif; 
+	color: #fff; 
+	text-transform: uppercase; 
+	text-align: center; 
+	margin-bottom: 15px;
+	letter-spacing: 1px;
+}
+h3 {
+	font: 26px/30px 'Times New Roman', Georgia, Serif; 
+	color: #e9e9e9; 
+	text-transform: uppercase;  
+	padding-bottom: 15px;3b3b3b
+}
+h4{
+	font: 18px/22px 'Times New Roman', Georgia, Serif; 
+	color: #ef1f27; 
+	text-transform: uppercase; 
+	margin-bottom: 10px;
+}
+h5{
+	font: bold 13px/16px "Trebuchet MS", Arial, Helvetica, sans-serif; 
+	color: #e9e9e9; 
+	text-transform:uppercase;
+}
+h6{
+	font: 26px/30px 'Times New Roman', Georgia, Serif; 
+	color: #3b3b3b; 
+	text-transform: uppercase;  
+	padding-bottom: 15px;
+}
+#loading {
+	position: absolute; 
+	left: 50%; 
+	top: 450px; 
+	z-index: 50;
+}
+#loadingHolder {
+	position: absolute; 
+	background-color: #fbfbfb; 
+	z-index: 5000; 
+	width: 100%; 
+	height: 1966px; 
+	opacity: 1;
+}
+.wrapper {
+	overflow: hidden; 
+	width: 100%;
+}
+.extra-wrap {
+	overflow: hidden;
+}
+.container {
+	position: relative; 
+	overflow: visible; 
+	width: 741px; 
+	margin: 0 auto;
+}
+.container_1 {
+	position: relative; 
+	overflow: visible; 
+	width: 741px; 
+	margin: 0 auto;
+}
+.marg_1{
+	margin: 10px 0 31px;
+}
+.marg_2{
+	margin: 0 0 10px;
+}
+.marg_3{
+	margin: 0 0 10px;
+}
+.marg_4{
+	margin: 0 0 10px;
+}
+.pad_1{
+
+}
+.pad_2{
+	padding-top: 0px;
+	padding-bottom: 27px;
+}
+.pad_3{
+	padding-bottom: 28px;
+}
+.bg_1{
+	background: url("../images/line.jpg") 449px 0 repeat-y;
+	margin-bottom: 8px;
+margin-top: 8px;
+}
+.bg_2{
+	background: #FFFFFF;
+}
+.bg_3{
+	/*	background: url("../images/line.jpg") 568px 0 repeat-y;*/
+	padding-bottom: 6px;
+}
+3.bg_4{
+	background: url("../images/line2.jpg") 563px 0 repeat-y;
+	padding-bottom: 11px;
+}
+hr{
+	border: none;
+	height: 1px;
+	color: #b4b4b4;
+	background-color: #b4b4b4;
+	margin: 0 0 0px;
+}
+/*-------------Header-------------*/
+header {
+	margin: 0; 
+	padding: 0;
+	width: 100%; 
+	background: url(../images/header-bg.jpg) center top repeat-x;
+}
+.logo{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+.button-like {
+	margin: 0;
+	display: inline-block;
+	float: right;
+	background: url(../images/like_bg.jpg) center top repeat-x;
+}
+.button-like span {
+	font: 19px/22px 'Times New Roman', Georgia, Serif;
+	display: block;
+	color: #fff;
+	padding: 0 0 9px;
+	margin: 24px 2px 0;
+}
+.button-like span b {
+	display: inline-block;
+	background: url('../images/like_icon.png') no-repeat 0 0;
+	width: 19px;
+	height: 17px;
+	padding: 0 8px 0 0;
+	margin: 0px 0px 0 0px;
+}
+#txt0{
+	font: 13px/15px 'Trebuchet MS', Helvetica, sans-serif;
+	color: #818181;
+	margin: -10px 0 0;
+	text-align: center;
+}
+/*-------------End Header-------------*/
+/*-------------Content-------------*/
+/*-----content carousel-----*/
+.ca-container{
+	position: relative; 
+	width: 741px;
+	height: 420px;
+	margin-bottom: 33px;
+}
+.ca-wrapper{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.ca-item{
+	position: relative;
+	float: left;
+	width: 256px;
+	height:100%;
+}
+.ca-item-1, .ca-item-2, .ca-item-3, .ca-item-4 {
+	width: 229px;
+	height: 100%;
+}
+.icon-act {
+	position: absolute; 
+	left: 0;
+	top: 12px;
+}
+.ca-more{
+	position: relative;
+	display: block !important;  
+	width: 229px; 
+	height: 100%; 
+	cursor: pointer;
+}
+.ca-close{
+	top: 25px; 
+	right: -380px;
+	position: relative;
+	display: inline-block;
+}
+.ca-close:hover{
+	opacity: 1.0;
+}
+.ca-close img{
+	padding: 7px 9px 0 0;
+}
+.ca-content-wrapper{
+	position: absolute; 
+	width: 0px; 
+	top: 0; 
+	text-align: left; 
+	z-index: 500; 
+	overflow: hidden;
+}
+.ca-content{
+	width: 485px;
+	overflow: hidden;
+	background: #222222;
+}
+.ca-content span{
+	font: 22px/1.2em 'Times New Roman', Georgia, Serif; 
+	color: #fff; 
+}
+.ca-content-text{
+	padding: 66px 0 0 30px; 
+	margin: 0 0 29px 0;
+	width: 425px; 
+	height: 254px;
+	display: inline-block;
+	overflow: hidden;
+}
+.ca-content-text p {
+	font: 13px/18px 'Trebuchet MS', Helvetica, sans-serif;
+	color: #818181; 
+}
+.ca-nav {
+	position: absolute; 
+	z-index: 200;
+	margin: 181px 0 0;
+	display: none;
+}
+.ca-nav-prev {
+	position: relative; 
+	display: inline-block;  
+	z-index: 1; 
+	left: -29px; 
+	cursor: pointer;
+}
+.ca-nav-next {
+	position: relative; 
+	display: inline-block;  
+	z-index: 1; 
+	left: 712px; 
+	cursor: pointer;
+}
+.ca-nav .img_act {
+	position: absolute;
+}
+.ca-close .img_act {
+	position: absolute;
+}
+/*-----end content carousel-----*/
+.indents2{
+	text-align: center;
+	background: #222222;
+	padding:  0 0 19px;
+	height: 100%;
+}
+.indents2 .quote-names{
+	bottom: 0;
+    position: absolute;
+    right: 10px;
+}
+.indents2 p{
+	font: 13px/18px 'Trebuchet MS', Helvetica, sans-serif;
+	color: #818181;
+	min-height: 150px;
+	text-align: justify;
+	padding: 0 5px;
+}
+.indents2 .quote-decanter-one{
+	font: 13px/18px 'Trebuchet MS', Helvetica, sans-serif;
+	color: #818181;
+	min-height: 0px;
+	text-align: justify;
+	line-height: 23px;
+	margin-bottom: 10px;
+	padding: 0 5px;
+}
+.block1 {
+	position: relative;
+	margin: 0 auto 25px;
+	width: 229px;
+	height: 181px;
+}
+.block1 img {
+}
+.button {
+	font: 14px/18px 'Trebuchet MS', Helvetica, sans-serif;
+	display: inline-block;
+	padding: 6px 13px;
+	color: #fff;
+	background: #3b3b3b;
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.button:hover{
+	color: #222222;
+	background: #fff;
+}
+.button1 {
+	font: 14px/18px 'Trebuchet MS', Helvetica, sans-serif;
+	display: inline-block;
+	padding: 6px 13px;
+	color: #fff;
+	background: #3b3b3b;
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.button1:hover{
+	color: #fff;
+	background: #ef1f27;
+}
+.col_1{
+	position:relative;
+	display: inline-block;
+	width: 417px;
+	margin: 0 60px 0 0;
+}
+.col_1 p{
+	margin: 0 0 32px;
+	text-align: justify;
+}
+.col_2{
+	position:relative;
+	display: inline-block;
+	width: 245px;
+	
+	
+}
+.col_2 h3{
+	margin: 5px 0 5px;
+}
+.info{
+	position: relative;
+	border-bottom: 1px solid #ececec; 
+}
+.line{
+	color: #ececec;
+	background-color: #ececec;
+	margin: 0 0 7px;
+}
+.col_3{
+	position:relative;
+	display: inline-block;
+	width: 850px;
+	
+}
+.col_3 span{
+	display: inline-block;
+	width: 73px;
+}
+.google_map{
+	position:  relative;
+	overflow: hidden;
+	width: 307px;
+	height: 166px;
+	box-shadow: none;
+	background-color: #ececec;
+	background-repeat: no-repeat;  
+	background-position: 50%;
+	margin: 3px 21px 0 0px;
+	float: left;
+}
+.text_1{
+	font: bold 13px/19px "Trebuchet MS", Arial, Helvetica, sans-serif; 
+	color:#555; 
+	text-transform:uppercase;
+	/*padding: 0 0 7px;*/
+}
+.mailLink {
+	color: #ed1c24;
+	white-space: pre;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.mailLink:hover {
+	color: #555555;
+}
+.col_4{
+	position:relative;
+	display: inline-block;
+	width: 124px;
+}
+.soc{
+	font: 20px/29px 'Times New Roman', Georgia, Serif; 
+	margin: 1px 0 0 5px;
+}
+.forSoc{
+	float: left;
+	
+	margin: 0 0 11px;
+}
+.icons span.back{
+	margin: 0 9px 0 0;
+	top: 1px;
+	position: relative;
+}
+.soc a {
+	text-decoration: none;
+	position: relative;
+	color: #626262;
+}
+.soc  .img_act {
+	position: absolute;
+}
+/*-------------End Content-------------*/
+/*-------------Footer-------------*/
+footer {
+	width: 100%; 
+	overflow: hidden; 
+	margin: 0 auto; 
+	background: url('../images/footer-tail.jpg') 0 0 repeat;
+	padding: 24px 0 16px;
+}
+.col_5{
+	position:relative;
+	display: inline-block;
+	width: 190px;
+background: url("../images/line2.jpg") 209px 0 repeat-y;
+height: 83px;
+padding-right: 20px;
+float: left;
+}
+.text_2{
+	margin: 0px 0 0;
+	font-size: 16px;
+	color: #6f6f6f;
+	text-transform: uppercase;
+	width: 200px;
+}
+.col_6{
+	position:relative;
+	display: inline-block;
+	width: 120px;
+	float: right;
+}
+.text_3{
+	font-size: 13px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 5px 0 0;
+	line-height: 26px;
+}
+.text_4{
+	font-size: 22px;
+	color: #999999;
+	text-transform: uppercase;
+}
+/*-------------End Footer-------------*/
+.quote{
+	line-height: 27px !important;
+	text-align: center;
+	font-style: italic !important;
+}
+.quote2{
+	line-height: 23px !important;
+	text-align: center;
+	padding-left: 21px;
+	padding-right: 25px;
+	font-style: italic !important;
+}
+.quote3{
+	line-height: 23px !important;
+	text-align: center;
+	padding-left: 21px;
+	padding-right: 25px;
+	font-style: italic !important;
+}
+.logofooter{
+	position: relative;
+	right: -59px;
+	float: right;
+}
+#content{
+	background: url(../images/content-bg.jpg) center top;
+    background-repeat-x: repeat;
+    background-repeat-y: inherit;
+    background-color: #262626;
+}
+.logos{
+	margin-top: 30px;
+	border-top: 1px solid black;
+	left: -80px;
+    position: relative;
+}
+
+.imgred{
+	-moz-box-shadow: 3px 3px 5px 6px #520308;
+	-webkit-box-shadow: 0px 0px 20px 2px #520308;
+	-box-shadow: 0px 2px 5px 4px #520308;
+	width: 95%;
+	border-radius: 4px;
+}
+div img {
+	border-radius: 4px;
+}
+.logo1{
+height: 130px;
+}
+.logo1 img{
+	margin-right: 5px;
+}
+.logo2{
+height: 170px;
+}
+.col_15{
+	position:relative;
+	display: inline-block;
+	width: 328px;
+	margin: 0 45px 0 0;
+	margin-left: 30px;
+	background: url("../images/line2.jpg") 325px 0 repeat-y;
+}
+
+.info .marg_3 {
+	text-align: justify;
+}
+
+/* Carousel */
+
+/* carousel */
+#quote-carousel 
+{
+	width: 100%;
+  padding: 0 10px 30px 10px;
+  margin-top: 30px 0px 0px;
+}
+#quote-carousel small {
+	color:white;
+}
+#quote-carousel blockquote > p {
+	margin: 0 0 10px;
+	padding: 5px 0;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left 
+{
+  left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right 
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li 
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+#quote-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+/* End carousel */
+
+.item blockquote {
+    border-left: none; 
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "“";
+    font-family: 'Fontawesome';
+    float: left;
+	margin-right: 10px;
+	color: white;
+	font-size: 40px;
+    font-weight: bold;
+}
+
+
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #quote-carousel 
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+      margin-top: 30px;
+    }
+    
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) { 
+    
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;  
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Carousel */
+
+/* carousel */
+#quote-carousel 
+{
+  padding: 0 10px 30px 0;
+  margin-top: 30px 0px 0px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left 
+{
+  left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right 
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: -20px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li 
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+#quote-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+
+.carousel {
+    position: relative
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden
+}
+
+.carousel-inner>.item {
+    position: relative;
+    display: none;
+    -webkit-transition: .6s ease-in-out left;
+    transition: .6s ease-in-out left
+}
+
+.carousel-inner>.item>img,.carousel-inner>.item>a>img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    line-height: 1
+}
+
+.carousel-inner>.active,.carousel-inner>.next,.carousel-inner>.prev {
+    display: block
+}
+
+.carousel-inner>.active {
+    left: 0
+}
+
+.carousel-inner>.next,.carousel-inner>.prev {
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.carousel-inner>.next {
+    left: 100%
+}
+
+.carousel-inner>.prev {
+    left: -100%
+}
+
+.carousel-inner>.next.left,.carousel-inner>.prev.right {
+    left: 0
+}
+
+.carousel-inner>.active.left {
+    left: -100%
+}
+
+.carousel-inner>.active.right {
+    left: 100%
+}
+
+.carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+    opacity: .5;
+    filter: alpha(opacity=50)
+}
+
+.carousel-control.left {
+    background-image: -webkit-linear-gradient(left,color-stop(rgba(0,0,0,0.5) 0),color-stop(rgba(0,0,0,0.0001) 100%));
+    background-image: linear-gradient(to right,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.0001) 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000',endColorstr='#00000000',GradientType=1)
+}
+
+.carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left,color-stop(rgba(0,0,0,0.0001) 0),color-stop(rgba(0,0,0,0.5) 100%));
+    background-image: linear-gradient(to right,rgba(0,0,0,0.0001) 0,rgba(0,0,0,0.5) 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#80000000',GradientType=1)
+}
+
+.carousel-control:hover,.carousel-control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+    filter: alpha(opacity=90)
+}
+
+.carousel-control .icon-prev,.carousel-control .icon-next,.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block
+}
+
+.carousel-control .icon-prev,.carousel-control .glyphicon-chevron-left {
+    left: 50%
+}
+
+.carousel-control .icon-next,.carousel-control .glyphicon-chevron-right {
+    right: 50%
+}
+
+.carousel-control .icon-prev,.carousel-control .icon-next {
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    font-family: serif
+}
+
+.carousel-control .icon-prev:before {
+    content: '\2039'
+}
+
+.carousel-control .icon-next:before {
+    content: '\203a'
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #fff;
+    border-radius: 10px
+}
+
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #fff
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6)
+}
+
+.carousel-caption .btn {
+    text-shadow: none
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-control .glyphicons-chevron-left,.carousel-control .glyphicons-chevron-right,.carousel-control .icon-prev,.carousel-control .icon-next {
+        width:30px;
+        height: 30px;
+        margin-top: -15px;
+        margin-left: -15px;
+        font-size: 30px
+    }
+
+    .carousel-caption {
+        right: 20%;
+        left: 20%;
+        padding-bottom: 30px
+    }
+
+    .carousel-indicators {
+        bottom: 20px
+    }
+}
+
+/* End carousel */
